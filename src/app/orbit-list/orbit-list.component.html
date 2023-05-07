@@ -5,16 +5,18 @@
         <th>Operational</th>
         <th>Orbit Type</th>
         <th>Launch Date</th>
-    </tr>
-    <tr class="data-row">
-        <td>GPS 938</td>
+    </tr >
+    <tr *ngFor = "let satData of satellites"  class="data-row">
+        <td>{{satellites[0]}}</td>
         <td>Positioning</td>
         <td>true</td>
         <td>HIGH</td>
         <td>2001-11-01</td>
+        <td>GPS 938</td>
     </tr>
 </table>
 
-<!-- TODO 2b: use *ngFor to display satellite data in the table -->
-<!-- TODO 3b: add style directive to conditionally highlight satellite type -->
+<!-- TODO 2b: use *ngFor to display satellite data in the table
+//satellites class header-row & data-row -->
+<!-- TODO 3b: add style directive to conditionally highlight satellite type (class header-row & data-row) -->
 
