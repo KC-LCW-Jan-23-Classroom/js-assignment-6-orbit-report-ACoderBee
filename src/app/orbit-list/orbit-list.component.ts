@@ -10,7 +10,11 @@ import { Satellite } from '../satellite';
 export class OrbitListComponent implements OnInit {
 
   @Input() satellites: Satellite[];
-  
+  name:string = "GPS 938";
+  type:string = "Positioning";
+  launchDate:string = "2001-11-01";
+  orbitType:string = "HIGH";
+  operational:boolean = true;
 
   constructor() { }
 
