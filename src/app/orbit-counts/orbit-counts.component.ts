@@ -29,3 +29,4 @@ export class OrbitCountsComponent implements OnInit {
 
 
 }
+// if (satellites>0){satellites.length}else 0
