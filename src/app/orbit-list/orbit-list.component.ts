@@ -32,5 +32,14 @@ export class OrbitListComponent implements OnInit {
 			return 0;
 		});
 	}
+ //array select odd array change color
+ odd(satellites: []):boolean{
+  for(let i=0; i=satellites.length; i++){
+    if(i%2===1){
+      return true;//change color or should I use 1/0 
+    }
+  }
+ }
+ 
 
 }
